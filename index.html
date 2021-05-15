@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Library</title>
+<link rel="stylesheet" href="library.css">
+
+<body>
+
+    <div class="container">
+        <h3 class="header">Library</h3>
+        <form class="main" id="inputForm" action="/library.js">
+            <input type="text" name="title" id="title">
+            <label for="title">title</label>
+            <input type="text" name="author" id="author">
+            <label for="author">author</label>
+            <input type="number" name="pages" id="pages">
+            <label for="pages">pages</label>
+            <span>
+                <input type="checkbox" name="read" id="read">
+                <label for="read">read</label>
+            </span>
+
+            <button class="button" type="submit" id="submit">Submit</button>
+        </form>
+
+        <div class="side" name="buttons">
+            <button class="button button-add">Add Book</button>
+        </div>
+        <div class="footer" name="libraryList" id="libraryList">
+            <li>some </li>
+            <li>dummy</li>
+            <li>list</li>
+            <li>stuff</li>
+        </div>
+
+    </div>
+
+    <script src="library.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.container {
+    margin: 50px;
+    padding: 10px;
+    width: fit-content;
+    height: auto;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.header {
+    grid-area: header;
+}
+.main {
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: grey;
+    display: grid;
+    grid-area: main;
+}
+.side {
+    display: grid;
+    grid-area: sidebar;
+}
+.footer {
+    padding: 10px;
+    border: 2px solid cyan;
+    background-color: white;
+    grid-area: footer;
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  color: grey;
+}
+
+.button-add {
+    justify-self: stretch;
+}
