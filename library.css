@@ -1,40 +1,59 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .container {
-    margin: 50px;
+    margin: 30px;
     padding: 10px;
-    width: fit-content;
+    width: max;
     height: auto;
     background-color: lightblue;
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: auto;
     grid-template-areas: 
-    "header header header header"
-    "main main main sidebar"
-    "footer footer footer footer";
+    "h h h h"
+    "m m  m s"
+    "f f f f";
     gap: 20px;
-    border: 1px solid black;
 }
 
 .header {
-    grid-area: header;
+    grid-area: h;
 }
 .main {
     color: white;
     padding: 10px;
-    border: 2px solid black;
     background-color: grey;
     display: grid;
-    grid-area: main;
+    grid-area: m;
 }
 .side {
     display: grid;
-    grid-area: sidebar;
+    grid-area: s;
 }
 .footer {
+    display: grid;
     padding: 10px;
-    border: 2px solid cyan;
     background-color: white;
-    grid-area: footer;
+    grid-area: f;
+    align-content: stretch;
+}
+
+.library-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.library-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.library-table tr:hover {background-color: #ddd;}
+
+.library-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
 }
 
 .button {
@@ -42,7 +61,7 @@
 }
 
 .button:hover {
-  color: grey;
+    color: grey;
 }
 
 .button-add {
